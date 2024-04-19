@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 //import external component
 import ExternalComponent from './components/1-exam-external-component';
 import ReactJSXFormat from './components/2-react-jsx';
+import NestedComponent from './components/3-nested-component';
+import DynamicData from './components/4-jsx-dynamic-data';
 
 // Default from creating react ------------------------------------------------
 /*
@@ -83,13 +85,27 @@ root.render(<ExternalComponent/>);
 
 
 // React JSX format ------------
-
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<ReactJSXFormat/>);
-
+*/
 //------------------------------
 
 
+// Nested component --------------------------------------
+/*
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<NestedComponent/>);
+*/
+// -------------------------------------------------------
+
+
+// JSX Dynamics data -------------------------------------------------------------------
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<DynamicData/>);
+
+// -------------------------------------------------------------------------------------
 
 
 
