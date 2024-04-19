@@ -10,6 +10,13 @@ import ReactJSXFormat from './components/2-react-jsx';
 import NestedComponent from './components/3-nested-component';
 import DynamicData from './components/4-jsx-dynamic-data';
 import StyleJSX from './components/5-jsx-style';
+import PropertiesJSX from './components/6-props';
+import PropsKey from './components/7-props-key';
+import PropsType from './components/8-props-type';
+
+//Import for project
+import ProjectOutput from './components/project';
+import './components/project.css';
 
 // Default from creating react ------------------------------------------------
 /*
@@ -110,14 +117,47 @@ root.render(<DynamicData/>);
 
 
 // JSX style ---------------------
-
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<StyleJSX/>)
-
+*/
 
 // ------------------------------
 
 
+// Props JSX -------------------------------------------------
+/*
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<PropertiesJSX/>)
+*/
+// -----------------------------------------------------------
+
+
+// Props key ------------------------------------------------------------------------
+/*
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<PropsKey/>)
+*/
+// ----------------------------------------------------------------------------------
+
+
+// Props type ----------------------
+/*
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<PropsType/>)
+*/
+// ---------------------------------
+
+
+
+
+
+// Project ---------------------------------
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<ProjectOutput/>)
+
+// -----------------------------------------
 
 
 
