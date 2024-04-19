@@ -9,6 +9,7 @@ import ExternalComponent from './components/1-exam-external-component';
 import ReactJSXFormat from './components/2-react-jsx';
 import NestedComponent from './components/3-nested-component';
 import DynamicData from './components/4-jsx-dynamic-data';
+import StyleJSX from './components/5-jsx-style';
 
 // Default from creating react ------------------------------------------------
 /*
@@ -101,11 +102,20 @@ root.render(<NestedComponent/>);
 
 
 // JSX Dynamics data -------------------------------------------------------------------
-
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<DynamicData/>);
-
+*/
 // -------------------------------------------------------------------------------------
+
+
+// JSX style ---------------------
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<StyleJSX/>)
+
+
+// ------------------------------
 
 
 

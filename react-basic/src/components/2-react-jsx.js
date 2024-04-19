@@ -17,7 +17,7 @@ function ReactJSXFormat(){
             <ul>
                 <li>index.html</li>
                 <li>index.app</li>
-                <li>App.js</li>
+                <li>App.js</li>  
             </ul>
         </React.Fragment>
     );
