@@ -18,6 +18,7 @@ import FormEvent from './components/10-event-form';
 import UseState from './components/11-useState';
 import AppExample1 from './components/11-1-bottom-up';
 import UseEffectExam from './components/12-useEffect.js';
+import MainComponent from './components/13-contextAPI.js';
 
 //Import for project
 import ProjectOutput from './components/project';
@@ -194,12 +195,18 @@ root.render(<AppExample1/>)
 
 
 // useEffect -----------------------
-
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<UseEffectExam/>)
-
+*/
 // ---------------------------------
 
+// context API -----------------------------------------
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<MainComponent/>)
+
+// -----------------------------------------------------
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

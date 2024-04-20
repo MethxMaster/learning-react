@@ -41,7 +41,6 @@ function FormInput(props){
 
 
     },[item,cost])
-
     const btnValid = formValid ? "custom-btn" : "disabled-btn" ;
 
     // --------------------------------
