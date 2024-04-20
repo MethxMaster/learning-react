@@ -19,6 +19,7 @@ import UseState from './components/11-useState';
 import AppExample1 from './components/11-1-bottom-up';
 import UseEffectExam from './components/12-useEffect.js';
 import MainComponent from './components/13-contextAPI.js';
+import MainComponent2 from './components/14-multiy-context-value.js';
 
 //Import for project
 import ProjectOutput from './components/project';
@@ -202,9 +203,16 @@ root.render(<UseEffectExam/>)
 // ---------------------------------
 
 // context API -----------------------------------------
+/*
+// Single value
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<MainComponent/>)
+*/
+// Multi value
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<MainComponent2/>)
 
 // -----------------------------------------------------
 

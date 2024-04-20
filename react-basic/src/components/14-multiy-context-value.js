@@ -4,14 +4,19 @@ import './13-contextAPI.css';
 
 const dataContext = createContext()
 
-function MainComponent(){
+function MainComponent2(){
     return (
-        <dataContext.Provider value="MethxMaster" >
+        <dataContext.Provider value={
+            {
+                nickname:'MethxMaster',
+                codename:'developer01'
+            }
+        }>
             <div className="main-component">
                 <div>
                     <p>Main component</p>
                     <dataContext.Consumer>
-                        {value=><p>data = <span className="data">{value}</span></p>}
+                        {value=><p>data = <span className="data">{value.nickname}</span><span className="data2">{value.codename}</span></p>}
                     </dataContext.Consumer>
                 </div>
                 <div style={{display:'flex'}}>
@@ -24,12 +29,11 @@ function MainComponent(){
 }
 
 function Sub1Component1(){
-    const value = useContext(dataContext) /* way 2 : Use react hook (useContext) */
+    const value = useContext(dataContext)
     return (
         <div className="sub1">
             <p>sub-1 component-1</p>
-            {/* way 2 : Use react hook (useContext) */}
-            <p>data = <span className="data">{value}</span></p>     
+            <p>data = <span className="data">{value.nickname}</span><span className="data2">{value.codename}</span></p>   
 
             <Sub2Component1/>
         </div>
@@ -44,25 +48,22 @@ function Sub1Component2(){
     );
 }
 function Sub2Component1(){
+    const {nickname,codename} = useContext(dataContext)
     return (
         <div className="sub2">
             <p>sub-2 component-1</p>
-            {/*  way 1 : Use data context provider/consumer */}
-            <dataContext.Consumer>
-                {value=><p>data = <span className="data">{value}</span></p>}
-            </dataContext.Consumer>
+            <p>data = <span className="data">{nickname}</span><span className="data2">{codename}</span></p>
         </div>
     );
 }
 function Sub2Component2(){
+    const {nickname:item1,codename:item2} = useContext(dataContext)
     return (
         <div className="sub2">
             <p>sub-2 component-2</p>
-            <dataContext.Consumer>
-                {value=><p>data = <span className="data">{value}</span></p>}
-            </dataContext.Consumer>
+            <p>data = <span className="data">{item1}</span><span className="data2">{item2}</span></p>
         </div>
     );
 }
 
-export default MainComponent;
+export default MainComponent2;
