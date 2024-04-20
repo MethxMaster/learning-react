@@ -13,6 +13,9 @@ import StyleJSX from './components/5-jsx-style';
 import PropertiesJSX from './components/6-props';
 import PropsKey from './components/7-props-key';
 import PropsType from './components/8-props-type';
+import FormOutput from './components/9-form';
+import FormEvent from './components/10-event-form';
+import UseState from './components/11-useState';
 
 //Import for project
 import ProjectOutput from './components/project';
@@ -150,21 +153,37 @@ root.render(<PropsType/>)
 
 
 
-
-
 // Project ---------------------------------
-
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<ProjectOutput/>)
-
+*/
 // -----------------------------------------
 
 
 
+// Form,-------------------------------------------------------------
+/*
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<FormOutput/>);
+*/
+// ------------------------------------------------------------------
 
 
+// Event form ---------------------------------------------------------------------
+/*
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<FormEvent/>)
+*/
+// --------------------------------------------------------------------------------
 
 
+// UseState ------------------------------------------------------------------------
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<UseState/>)
+
+// ---------------------------------------------------------------------------------
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

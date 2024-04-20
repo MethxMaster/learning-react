@@ -1,0 +1,47 @@
+.custom-container{
+    width:50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.custom-form-control{
+    display: block;
+    font-size: 16px;
+    padding: 0px;
+    margin: 5px 0px;
+    width:100%;
+}
+label{
+    font-size: 16px;
+    padding: 0px;
+    width: 100%;
+    margin: 0px 0px;
+}
+input[type="text"]{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+}
+input[type="text"]:focus{
+    outline-color: rgb(254, 148, 110);
+    box-shadow: 1px 1px 5px 1px coral;
+}
+input[type="button"]{
+    display: block;
+    width: 100%;
+    background-color: coral;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    margin: 10px 0 30px;
+}
+input[type="button"]:hover{
+    background-color: rgb(254, 148, 110);
+}
