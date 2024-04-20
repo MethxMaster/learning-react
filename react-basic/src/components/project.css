@@ -44,3 +44,11 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
+
+.income{
+    border-right: 5px solid green;
+}
+.outcome{
+    border-right: 5px solid red;
+}

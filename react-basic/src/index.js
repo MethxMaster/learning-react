@@ -17,6 +17,7 @@ import FormOutput from './components/9-form';
 import FormEvent from './components/10-event-form';
 import UseState from './components/11-useState';
 import AppExample1 from './components/11-1-bottom-up';
+import UseEffectExam from './components/12-useEffect.js';
 
 //Import for project
 import ProjectOutput from './components/project';
@@ -185,11 +186,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<UseState/>)
 */
 // Bottom up example
-
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<AppExample1/>)
-
+*/
 // ---------------------------------------------------------------------------------
+
+
+// useEffect -----------------------
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<UseEffectExam/>)
+
+// ---------------------------------
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

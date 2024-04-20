@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 //Title
 const Title = ()=><h1 className="title">Cash record</h1>
@@ -7,9 +7,13 @@ const Title = ()=><h1 className="title">Cash record</h1>
 //Form
 function FormInput(props){
 
+    console.log('Render Form component.')
+
+
     //Declare useState---------------
-    const [item,setItem] = useState('')
-    const [cost,setCost] = useState(0)
+    const [item,setItem] = useState('');
+    const [cost,setCost] = useState(0);
+    const [formValid,setFormValid] = useState(false);
     // ------------------------------
 
     //Mananging filled data ----------
@@ -29,8 +33,18 @@ function FormInput(props){
         setCost(0);
         props.getData(dataSubmit) 
     }
-    // --------------------------------
 
+    
+    useEffect(()=>{
+        const checkData = item.trim().length>0 && cost!=0
+        setFormValid(checkData)
+
+
+    },[item,cost])
+
+    const btnValid = formValid ? "custom-btn" : "disabled-btn" ;
+
+    // --------------------------------
     return (
         <form className="custom-container"> 
             <div className="custom-form-control">
@@ -41,7 +55,7 @@ function FormInput(props){
                 <label>Price</label>
                 <input id="textbox-price" type="text" placeholder="price" onChange={regisCost} value={cost}></input>
             </div>
-            <input td="form-submit" type="button" value="Submit" className="custom-btn" onClick={submitData}></input>
+            <input td="form-submit" type="button" value="Submit" className={btnValid} disabled={!formValid} onClick={submitData}></input>
         </form>
     );
 }
@@ -68,7 +82,7 @@ function EachItem(props){
     );
 }
 
-function AppExample1(){
+function UseEffectExam(){
 
     const initialData = []
 
@@ -88,4 +102,4 @@ function AppExample1(){
     );
 }
 
-export default AppExample1;
+export default UseEffectExam;

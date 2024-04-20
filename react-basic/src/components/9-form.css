@@ -31,7 +31,7 @@ input[type="text"]:focus{
     box-shadow: 1px 1px 5px 1px coral;
 }
 
-input[type="button"]{
+.custom-btn{
     display: block;
     width: 100%;
     background-color: coral;
@@ -42,9 +42,21 @@ input[type="button"]{
     padding: 10px;
     margin: 10px 0 30px;
 }
-input[type="button"]:hover{
+.custom-btn:hover{
     background-color: rgb(254, 148, 110);
 }
-input[type="button"]:active{
+.custom-btn:active{
     background-color: rgb(255, 111, 58);
+}
+
+.disabled-btn{
+    display: block;
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+    margin: 10px 0 30px;
 }
