@@ -4,9 +4,8 @@
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-
+    padding: 0px 20px;
 }
-
 .custom-form-control{
     display: block;
     font-size: 16px;

@@ -16,6 +16,7 @@ import PropsType from './components/8-props-type';
 import FormOutput from './components/9-form';
 import FormEvent from './components/10-event-form';
 import UseState from './components/11-useState';
+import AppExample1 from './components/11-1-bottom-up';
 
 //Import for project
 import ProjectOutput from './components/project';
@@ -179,9 +180,14 @@ root.render(<FormEvent/>)
 
 
 // UseState ------------------------------------------------------------------------
-
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<UseState/>)
+*/
+// Bottom up example
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<AppExample1/>)
 
 // ---------------------------------------------------------------------------------
 
