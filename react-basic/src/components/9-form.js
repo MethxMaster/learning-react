@@ -20,11 +20,9 @@ function FormContent(){
 
 function FormOutput(){
     return (
-
         <div className='custom-container'>
             <FormContent/>
         </div>
-
     );
 }
 

@@ -39,7 +39,6 @@ function FormInput(props){
         const checkData = item.trim().length>0 && cost!=0
         setFormValid(checkData)
 
-
     },[item,cost])
     const btnValid = formValid ? "custom-btn" : "disabled-btn" ;
 

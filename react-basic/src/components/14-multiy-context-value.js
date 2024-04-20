@@ -11,6 +11,7 @@ function MainComponent2(){
                 nickname:'MethxMaster',
                 codename:'developer01'
             }
+            
         }>
             <div className="main-component">
                 <div>

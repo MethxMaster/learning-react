@@ -6,7 +6,7 @@ const dataContext = createContext()
 
 function MainComponent(){
     return (
-        <dataContext.Provider value="MethxMaster" >
+        <dataContext.Provider value={"MethxMaster"}>
             <div className="main-component">
                 <div>
                     <p>Main component</p>

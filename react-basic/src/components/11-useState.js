@@ -8,8 +8,6 @@ function FormContent(){
     const [product,setProduct] = useState('');
     const [price,setPrice] = useState(0);
 
-
-
     const updateName = (event)=>{
         setProduct(event.target.value)
         console.log("useState hook : ", product)
