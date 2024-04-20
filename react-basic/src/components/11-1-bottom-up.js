@@ -1,17 +1,18 @@
-
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
-
 
 //Title
 const Title = ()=><h1 className="title">Cash record</h1>
 
-
+//Form
 function FormInput(props){
 
+    //Declare useState---------------
     const [item,setItem] = useState('')
     const [cost,setCost] = useState(0)
+    // ------------------------------
 
+    //Mananging filled data ----------
     const regisItem = (event)=>{
         setItem(event.target.value)
     }
@@ -26,10 +27,9 @@ function FormInput(props){
         };
         setItem('');
         setCost(0);
-        props.getData(dataSubmit)
-        
-        
+        props.getData(dataSubmit) 
     }
+    // --------------------------------
 
     return (
         <form className="custom-container"> 
@@ -68,20 +68,15 @@ function EachItem(props){
 
 function AppExample1(){
 
-    const initialData = [
-        {id:1,item:"Book",cost:259},
-        {id:2,item:"Food",cost:300},
-        {id:3,item:"Shirt",cost:150}
-
-    ]
+    const initialData = []
 
     const [currentData,setData] = useState(initialData);
 
     const updateData = (newData)=>{
         console.log(newData)
-        return setData([newData,...currentData])
+        setData([newData,...currentData])
     }
-
+    
     return (
         <div className="container">
             <Title/>

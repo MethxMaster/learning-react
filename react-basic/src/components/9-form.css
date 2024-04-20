@@ -30,6 +30,7 @@ input[type="text"]:focus{
     outline-color: rgb(254, 148, 110);
     box-shadow: 1px 1px 5px 1px coral;
 }
+
 input[type="button"]{
     display: block;
     width: 100%;
@@ -43,4 +44,7 @@ input[type="button"]{
 }
 input[type="button"]:hover{
     background-color: rgb(254, 148, 110);
+}
+input[type="button"]:active{
+    background-color: rgb(255, 111, 58);
 }
